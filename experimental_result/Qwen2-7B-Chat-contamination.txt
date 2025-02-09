@@ -1,5 +1,4 @@
----------Qwen-7B 污染-----------
-
+----statcic----
 bash Test.bash mmlu_sample_300
 255/300=0.850
 250/300=0.833
@@ -8,6 +7,7 @@ bash Test.bash mmlu_sample_300
 258/300=0.860
 85.2±1.9
 
+----AdEval----
 bash Test.bash DyCQ_mmlu_sample_300
 486/600=0.810
 485/600=0.808
@@ -16,7 +16,7 @@ bash Test.bash DyCQ_mmlu_sample_300
 485/600=0.808
 81±1.7
 
-第一轮
+----reconstruction 1----
 bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 446/600=0.743
 440/600=0.733
@@ -25,7 +25,7 @@ bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 438/600=0.730
 74.6±1.6
 
-第二轮
+----reconstruction 2----
 bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 424/600=0.707
 426/600=0.710
@@ -34,7 +34,7 @@ bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 430/600=0.717
 70.8±1.0
 
-第三轮
+----reconstruction 3----
 bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 399/600=0.665
 398/600=0.663
@@ -43,7 +43,7 @@ bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 402/600=0.670
 66.2±1.4
 
-第四轮
+----reconstruction 4----
 bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 393/600=0.655
 385/600=0.642
@@ -51,6 +51,8 @@ bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 397/600=0.662
 378/600=0.630
 64.6±1.6
+
+----Bloom----
 
 bash Test.bash DyCQBloom_Reconstructed_mmlu_sample_300_2
 
@@ -144,7 +146,7 @@ Creating 88/132=0.667
 Creating 85/132=0.644
 Creating 64.8±1.9
 
-
+----auto-Dataset----
 bash Test.bash mimick_mmlu_sample_300
 228/300=0.760
 229/300=0.763
@@ -153,6 +155,7 @@ bash Test.bash mimick_mmlu_sample_300
 232/300=0.773
 76.5±0.8
 
+----latesteval----
 bash Test.bash latesteval_mmlu_sample_300
 515/600=0.858
 524/600=0.873
