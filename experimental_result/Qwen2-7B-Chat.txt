@@ -1,4 +1,4 @@
----------Qwen-7B-----------
+----static----
 bash Test.bash mmlu_sample_300
 183/300=0.61
 180/300=0.6
@@ -6,6 +6,7 @@ bash Test.bash mmlu_sample_300
 182/300=0.607
 60.9±0.8
 
+----AdEval----
 bash Test.bash DyCQ_mmlu_sample_300
 480/600=0.8
 484/600=0.807
@@ -14,7 +15,7 @@ bash Test.bash DyCQ_mmlu_sample_300
 484/600=0.807
 80.7±0.9
 
-第一轮：
+----reconstruction 1----
 bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 430/600=0.717
 435/600=0.725
@@ -23,7 +24,7 @@ bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 422/600=0.703
 71.6±0.9
 
-第二轮
+----reconstruction 2----
 bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 396/600=0.660
 389/600=0.648
@@ -33,7 +34,7 @@ bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 65.4±0.7
 
 
-第三轮
+----reconstruction 3----
 bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 392/600=0.653
 398/600=0.663
@@ -42,7 +43,7 @@ bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 391/600=0.652
 65.8±0.6
 
-第四轮
+----reconstruction 4----
 bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 363/600=0.605
 362/600=0.603
@@ -51,14 +52,7 @@ bash Test.bash DyCQ_Reconstructed_mmlu_sample_300
 366/600=0.610
 60.4±0.6
 
-bash Test.bash DyCQBloom_Reconstructed_mmlu_sample_300_2
-Remembering 100/132=0.758
-Understanding 109/132=0.826
-Applying 72/132=0.545
-Analyzing 93/132=0.705
-Evaluating 117/132=0.886
-Creating 83/132=0.629
-
+----Bloom----
 Overall 574/792=0.725
 
 Remembering 96/132=0.727
@@ -140,6 +134,7 @@ Creating 81/132=0.614
 Creating 84/132=0.636
 Creating 62.5±1.1
 
+----auto-Dataset----
 bash Test.bash mimick_mmlu_sample_300
 207/300=0.690
 204/300=0.680
@@ -148,6 +143,7 @@ bash Test.bash mimick_mmlu_sample_300
 203/300=0.677
 68.4±0.7
 
+----latesteval----
 bash Test.bash latesteval_mmlu_sample_300
 504/599=0.841
 505/599=0.843
