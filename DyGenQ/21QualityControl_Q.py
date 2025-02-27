@@ -1,5 +1,5 @@
 '''
-选择题目进行重构
+对数据集进行质量检查
 '''
 from llm_api import call_gpt3_api, call_gpt4_api, call_doub_api, call_qwen_api, call_claude3_api, call_glm4_api, call_llama3_api, call_qwen_net_api
 import argparse
