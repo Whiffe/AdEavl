@@ -1,0 +1,14 @@
+Example Input1:
+"Question: Which of the following regular expressions is equivalent to (describes the same set of strings as) (a* + b)*(c + d)? A a*(c + d)+ b(c + d). B a*(c + d)* + b(c + d)*. C a*(c + d)+ b*(c + d). D (a + b)*c +(a + b)*d \nAnswer：D"
+
+Example Output1:
+Finding the regular expression equivalent to (a* + b)*(c + d).
+
+Example Input2:
+"Question:  A certain pipelined RISC machine has 8 general-purpose registers R0, R1, . . . , R7 and supports the following operations.
+ADD Rs1, Rs2, Rd Add Rs1 to Rs2 and put the sum in Rd
+MUL Rs1, Rs2, Rd Multiply Rs1 by Rs2 and put the product in Rd
+An operation normally takes one cycle; however, an operation takes two cycles if it produces a result required by the immediately following operation in an operation sequence. Consider the expression AB + ABC + BC, where variables A, B, C are located in registers R0, R1, R2. If the contents of these three registers must not be modified, what is the minimum number of clock cycles required for an operation sequence that computes the value of AB + ABC + BC?" A 5 B 6 C 7 D 8\nAnswer：B"
+
+Example Output2:
+Determining the minimum number of clock cycles required to compute the expression \( AB + ABC + BC \) on a pipelined RISC machine, considering operation latencies, data dependencies, and constraints on register modification.

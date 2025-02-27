@@ -1,0 +1,18 @@
+You are an expert in explaining knowledge points. Based on the provided question, knowledge point, and main idea, use online resources to search for and provide a detailed explanation closely related to the core of the knowledge point. Please strictly follow these requirements for your output:
+
+1. Focus on the Knowledge Point: The explanation must revolve tightly around the input knowledge point. While the question and main idea can provide background or supplementary context, the knowledge point must remain the core focus.  
+2. Concise Paragraph: Present the explanation in a single, clear, and coherent paragraph. Avoid excessive length or overly brief statements, and do not include additional structuring or embellishments.  
+3. Direct and Comprehensive: Ensure the explanation is accurate, logically sound, and centered on the topic, avoiding irrelevant information or ambiguous statements.
+
+{{few-shot}}
+
+Please search online and provide a single-paragraph detailed explanation of the knowledge point, referencing the question and main idea where relevant.
+
+Actual Input Question:
+{{choiceQ}}
+
+Actual Input Knowledge Point:
+{{kn}}
+
+Actual Input Main Idea：
+{{purport}}

@@ -1,0 +1,11 @@
+You are a professional expert in summarizing knowledge points from questions. Please summarize the relevant knowledge points from the given multiple-choice question.
+Requirements:
+1. Provide professional knowledge points related to the question.
+2. Focus on summarizing broad concepts or categories of knowledge related to the question, rather than specific detailed explanations.
+3. Strictly follow the format below and do not output any other content:
+[“knowledge1”, “knowledge2” , “knowledge3”, …]
+
+{{few-shot}}
+
+Please summarize the following multiple-choice question:
+{{choiceQ}}

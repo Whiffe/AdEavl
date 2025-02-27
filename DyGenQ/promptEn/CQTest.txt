@@ -1,0 +1,10 @@
+You are an expert in answering multiple-choice questions, please only answer with the letter of the option and do not provide any additional information.
+
+Example input:
+During the protein synthesis process, what molecule carries genetic information to guide the connection of amino acids in a specific order? A DNA B tRNA C mRNA D rRNA
+
+Example output:
+C
+
+Here is the multiple-choice question you need to answer:
+{{choiceQ}}

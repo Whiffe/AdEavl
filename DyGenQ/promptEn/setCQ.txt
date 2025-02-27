@@ -1,0 +1,36 @@
+You are a professional question designer specializing in creating challenging multiple-choice questions. Based on the provided reference question, knowledge points, main ideas, and text content, please generate one multiple-choice question and its answer. Ensure the question's difficulty is not lower than the reference question, and preferably slightly higher. The question should test students' in-depth understanding, detailed analysis, and comprehensive judgment skills. The multiple-choice question must meet the following requirements:
+
+1. High Relevance: The question, correct option, and answer must be directly based on the provided text and closely related to the main idea.
+2. Consistent or Higher Difficulty: The complexity of the question must match or exceed that of the reference question. Avoid simple factual recitations; instead, require students to achieve a deep understanding and analyze details to deduce the correct answer.
+3. Reasonable and Distinguishable Options: The options must be logically clear, avoiding overly obvious correct answers. Include at least one strong distractor to test detailed reading and reasoning skills.
+4. Avoid external dependency: The question and its options must be entirely based on the provided text content and main idea. If quoting content is necessary, directly embed the relevant text in the question rather than using references like "according to the passage." Avoid creating questions that depend on context not provided, such as: "Which of the following best describes the purpose of penetration testing as described in the text?"
+5. Unique Answer: Ensure only one option is correct, while other options remain plausible but subtly incorrect or mismatched with the main idea and text content.
+6. Deep Understanding: The question can involve inference, comparison, method analysis, application of key concepts, etc., to increase the difficulty level.
+7. Innovative Question Stem: The question format should differ significantly from the reference question, showcasing creativity while maintaining a rigorous and professional style.
+8. Different Focus: The question’s focus should differ from the reference question. For example, if the reference question emphasizes concept definition, the generated question could focus on method application, key detail comparison, pros and cons analysis, or judgment in practical scenarios.
+9. Focus on knowledge points: The question must center around the provided knowledge points, with its core content closely aligned with the main idea.
+10. Strict Output Format: The output must strictly follow the JSON structure below, without any additional content:
+
+[
+  {
+    "Question": "Question content",
+    "A": "Option content",
+    "B": "Option content",
+    "C": "Option content",
+    "D": "Option content",
+    "Answer": "A/B/C/D"
+  }
+]
+
+{{few-shot}}
+
+
+Below are the provided reference question, knowledge points, main idea, and text content. Please generate a multiple-choice question and answer that meets the above requirements. Remember, do not make the question similar to the reference question, but ensure the difficulty level is consistent with or even higher than the reference question.
+Reference question:
+{{choiceQ}}
+Knowledge Point:
+{{kn}}
+Main Idea:
+{{purport}}
+Text Content:
+{{KNexplain}}

@@ -1,0 +1,73 @@
+You are a professional question designer specializing in creating challenging multiple-choice questions. Based on the provided reference question, knowledge points, main ideas, and text content, please generate six multiple-choice questions and answers corresponding to Bloom's six levels of cognitive learning. Ensure the question's difficulty is not lower than the reference question, and preferably slightly higher. The question should test students' in-depth understanding, detailed analysis, and comprehensive judgment skills.
+
+Let me first explain what Bloom's six cognitive levels are:
+
+Introduction to Bloom's Six Cognitive Levels:
+
+Level 1: Remembering
+This involves recognizing and recalling concepts and knowledge, storing them in the brain, and retrieving them when needed. Examples include memorizing vocabulary, poetry, or definitions. This level involves identifying concrete or abstract knowledge and can pertain to factual, conceptual, procedural, or metacognitive knowledge. While mechanical, it is a foundational step for learning and solving more complex problems.
+
+Level 2: Understanding
+Understanding means grasping the essence of information or knowledge, though not deeply or thoroughly—just a preliminary understanding. When learners connect "new" knowledge to existing knowledge, they achieve understanding. Examples include the classic Feynman technique, where teaching others reinforces personal understanding. Understanding occurs when new information integrates with existing cognitive frameworks.
+
+Understanding includes translating, interpreting, and inferring:
+
+Interpreting involves explaining or summarizing information in one's own words.
+Translating involves expressing learned content in different forms, such as using diagrams to explain a concept.
+Inferring involves predicting trends or developments based on learned knowledge.
+
+Level 3: Applying
+This level focuses on applying learned concepts, principles, or rules in new situations or solving real-world problems. It involves correctly using abstract ideas in appropriate contexts without explicit problem-solving instructions. Applications rely on remembering and understanding as foundational, including applying concepts, principles, methods, and theories, such as using the Pythagorean theorem to solve geometry problems.
+
+Level 4: Analyzing
+Analyzing involves breaking down complex knowledge into its components and understanding the relationships between them. It requires deconstructing material to identify essential elements and their relationships, making the material's organization and structure clearer. Tasks include identifying, analyzing, and recognizing the interrelationships and structure among concepts.
+
+For instance, discovering how Factor A changes alongside Factor B by analyzing correlations, causal relationships, mediating variables, and moderators.
+
+Level 5: Evaluating
+This level involves making judgments about the value of something based on rational and persuasive reasoning rather than intuition or observation. It requires synthesizing internal and external evidence and making objective, well-supported assessments. For example, legal debates where both sides cite laws to support their arguments exemplify evaluation.
+
+Level 6: Creating
+This involves reorganizing learned knowledge or generating new information to form a new whole, such as proposing new ideas, solutions, or designs. It requires analyzing and synthesizing components to form a new structure. Creativity emphasizes innovation and problem-solving, breaking conventional thought patterns and achieving the ultimate learning goal.
+
+Creating is the highest level as it challenges learners to develop new knowledge structures, highlighting innovation and originality.
+
+Multiple-Choice Question Requirements:
+
+1. High Relevance: The question, correct option, and answer must be directly based on the provided text and closely related to the main idea.
+2. Consistent or Higher Difficulty: The complexity of the question must match or exceed that of the reference question. Avoid simple factual recitations; instead, require students to achieve a deep understanding and analyze details to deduce the correct answer.
+3. Reasonable and Distinguishable Options: The options must be logically clear, avoiding overly obvious correct answers. Include at least one strong distractor to test detailed reading and reasoning skills.
+4. Avoid external dependency: The question and its options must be entirely based on the provided text content and main idea. If quoting content is necessary, directly embed the relevant text in the question rather than using references like "according to the passage." Avoid creating questions that depend on context not provided, such as: "Which of the following best describes the purpose of penetration testing as described in the text?"
+5. Unique Answer: Ensure only one option is correct, while other options remain plausible but subtly incorrect or mismatched with the main idea and text content.
+6. Focus on knowledge points: The question must center around the provided knowledge points, with its core content closely aligned with the main idea.
+7. Coverage of Levels: Each question must correspond to a single cognitive level, covering all six levels of Bloom's taxonomy, with one question per level. A total of six questions is required.  
+8. Strict Output Format: The output must strictly follow the JSON structure below, without any additional content:
+[
+  {
+    "Layer": "Cognitive Level",
+    "Question": "Question content",
+    "A": "Option content",
+    "B": "Option content",
+    "C": "Option content",
+    "D": "Option content",
+    "Answer": "A/B/C/D"
+  }
+  ...
+]
+
+{{few-shot}}
+
+
+Below are the provided reference question, knowledge points, main idea, and text content. Please generate Bloom's six cognitive-level multiple-choice questions that meets the above requirements. Remember, do not make the question similar to the reference question, but ensure the difficulty level is consistent with or even higher than the reference question.
+
+Reference question:
+{{choiceQ}}
+
+Knowledge Point:
+{{kn}}
+
+Main Idea:
+{{purport}}
+
+Text Content:
+{{KNexplain}}
