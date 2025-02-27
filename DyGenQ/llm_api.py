@@ -6,15 +6,15 @@ from volcenginesdkarkruntime import Ark
 
 # GPT API 配置信息
 client_gpt = OpenAI(
-    api_key="sk-rFczVSDA1q7CncCD333e05DdCbB143939287743aF382C399",
+    api_key="xxx",
     base_url="https://aihubmix.com/v1"
 )
 
 # Qwen 配置
-os.environ["DASHSCOPE_API_KEY"] = "sk-91b8d4bd58c14888975968c8ecb64159"
+os.environ["DASHSCOPE_API_KEY"] = "xxx"
 
 # Doub API 配置信息
-os.environ["ARK_API_KEY"] = "e0e02cc1-aa95-4676-aa55-aa82b9fcb7b8"
+os.environ["ARK_API_KEY"] = "xxx"
 client_doub = Ark(
     base_url="https://ark.cn-beijing.volces.com/api/v3",
 )
@@ -111,7 +111,6 @@ def call_deepseek_api(prompt):
         model="deepseek-ai/DeepSeek-V3",
     )
     return chat_completion.choices[0].message.content
-
 
 
 def call_llama3_api(prompt):
