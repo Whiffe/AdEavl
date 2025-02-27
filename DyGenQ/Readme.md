@@ -25,3 +25,7 @@
 32MergeJson.py 将重构的数据与原来剩下没被选中的数据进行合并
 
 DyGen.sh 执行01DyGenKN.py、02DyGenPurport.py、03DyGenQnet.py、04DyGenQsetQs.py，自动生成动态数据
+
+Reconstruct.sh 执行30ExtractDataReconstruct.py、31DyReconstructQs.py、32MergeJson.py，自动重构数据集
+
+llm_api.py 大模型API
