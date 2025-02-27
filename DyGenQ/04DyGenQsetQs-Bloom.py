@@ -1,6 +1,5 @@
 ''''
-一个问题生成多个，步骤一步步变得复杂
-第四步是，根据讲解的知识点，来出选择题和简答题。
+这一步是，根据讲解的知识点，来出基于Bloom的选择题。
 '''
 import pyarrow.parquet as pq
 from llm_api import call_qwen_api, call_qwen_net_api, call_doub_api  # 假设你使用这个 API 函数
