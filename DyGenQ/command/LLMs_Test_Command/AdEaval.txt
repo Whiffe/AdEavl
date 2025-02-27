@@ -86,7 +86,7 @@ python 05CQ_Test_Eval.py \
     
 python 08countScoreCQ.py \
     --json ./output/CQEdEaval_deepseek_Answer.json
-468/600=0.780 ✅
+468/600=0.780
 453/565=0.802
 461/600=0.768
 
