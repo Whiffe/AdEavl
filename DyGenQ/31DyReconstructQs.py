@@ -1,6 +1,6 @@
 ''''
-一个问题生成多个，步骤一步步变得复杂
-第四步是，根据讲解的知识点，来出选择题和简答题。
+将选取的题目进行重构
+
 python 31DyReconstructQs.py \
     --prompt ./promptEn/reconstructCQUp.txt \
     --dataset ./output/mmlu/Reconstruct_Complex/Reconstruct_college_computer_science_test.json \
