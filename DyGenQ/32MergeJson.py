@@ -1,4 +1,5 @@
 '''
+将重构的数据与原来剩下没被选中的数据进行合并
 python 32MergeJson.py \
     --json1 ./output/mmlu/Reconstruct_Complex/Reconstructed_college_computer_science_test.json \
     --json2 ./output/mmlu/Reconstruct_Complex/Remain_college_computer_science_test.json \
