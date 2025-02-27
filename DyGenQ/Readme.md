@@ -13,3 +13,11 @@
 05CQ_Test_Eval.py 判断LLM回答选择题是否正确
 
 08countScoreCQ.py 统计LLM回答选择题的得分
+
+21QualityControl_Q.py 对数据集进行质量检查
+
+30ExtractDataReconstruct.py 从数据集中选取题目进行重构
+
+31DyReconstructQs.py 将选取的题目进行重构
+
+32MergeJson.py 将重构的数据与原来剩下没被选中的数据进行合并
