@@ -1,3 +1,6 @@
+'''
+统计LLM回答选择题的得分
+'''
 import json
 import argparse
 import os
