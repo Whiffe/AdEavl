@@ -1,0 +1,191 @@
+------在LLMs上EdEaval上测试------------
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --model gpt3 \
+    --output ./output/CQEdEaval_gpt3_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_gpt3_Answer.json
+405/600=0.675
+67.8
+397/600=0.662
+67±0.8
+
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --model gpt4 \
+    --output ./output/CQEdEaval_gpt4_Answer.json
+    
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_gpt4_Answer.json
+449/600=0.748
+448/600=0.747
+449/600=0.748
+74.8±0.0
+
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --model doub \
+    --output ./output/CQEdEaval_doub_Answer.json
+    
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_doub_Answer.json
+506/600=0.843
+502/600=0.837
+504/600=0.840
+84.0±0.3
+
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --model qwen \
+    --output ./output/CQEdEaval_qwen_Answer.json
+    
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_qwen_Answer.json
+475/600=0.792
+477/600=0.795
+476/600=0.793
+79.4±0.2
+
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --model claude3 \
+    --output ./output/CQEdEaval_claude3_Answer.json
+    
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_claude3_Answer.json
+390/600=0.650
+385/600=0.642
+392/600=0.653
+64.8±0.6
+
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --model glm4 \
+    --output ./output/CQEdEaval_glm4_Answer.json
+    
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_glm4_Answer.json
+395/600=0.658
+398/600=0.663
+397/600=0.662
+66.1±0.3
+
+
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --model deepseek \
+    --output ./output/CQEdEaval_deepseek_Answer.json
+    
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_deepseek_Answer.json
+468/600=0.780 ✅
+453/565=0.802
+461/600=0.768
+
+
+------在LLMs上EdEaval上测试 添加静态prompt数据------------
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model gpt3 \
+    --output ./output/CQEdEaval_AddStatic_gpt3_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_AddStatic_gpt3_Answer.json
+389/600=0.648
+64.0
+407/600=0.678
+65.9±1.9
+
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model gpt4 \
+    --output ./output/CQEdEaval_AddStatic_gpt4_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_AddStatic_gpt4_Answer.json
+444/600=0.740
+443/600=0.738
+450/600=0.750
+74.4±0.6
+
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model doub \
+    --output ./output/CQEdEaval_AddStatic_doub_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_AddStatic_doub_Answer.json
+509/600=0.848
+506/600=0.843
+507/600=0.845
+84.6±0.3
+
+
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model qwen \
+    --output ./output/CQEdEaval_AddStatic_qwen_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_AddStatic_qwen_Answer.json
+479/600=0.798
+475/600=0.792
+483/600=0.805
+79.9±0.7
+
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model claude3 \
+    --output ./output/CQEdEaval_AddStatic_claude3_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_AddStatic_claude3_Answer.json
+394/600=0.657
+406/600=0.677
+399/600=0.665
+67.7±1.0
+
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model glm4 \
+    --output ./output/CQEdEaval_AddStatic_glm4_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_AddStatic_glm4_Answer.json
+410/572=0.717
+406/572=0.710
+407/572=0.712
+71.4±0.4
+
+
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./output/mmlu/Reconstruct_Complex/DyCQ_Reconstructed_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model deepseek \
+    --output ./output/CQEdEaval_AddStatic_deepseek_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQEdEaval_AddStatic_deepseek_Answer.json
+469/600=0.782 ✅
+450/566=0.795

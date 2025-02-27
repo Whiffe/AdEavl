@@ -1,0 +1,193 @@
+
+------在LLMs上Auto Dataset上测试------------
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --model gpt3 \
+    --output ./output/CQ_auto_gpt3_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_gpt3_Answer.json
+205/300=0.683
+190/300=0.633
+64.7
+65.8±2.5
+
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --model gpt4 \
+    --output ./output/CQ_auto_gpt4_Answer.json
+    
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_gpt4_Answer.json
+241/300=0.803
+245/300=0.817
+241/300=0.803
+81.0±0.7
+
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --model doub \
+    --output ./output/CQ_auto_doub_Answer.json
+    
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_doub_Answer.json
+253/299=0.846
+252/299=0.843
+255/299=0.853
+85.0±0.7
+
+
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --model qwen \
+    --output ./output/CQ_auto_qwen_Answer.json
+    
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_qwen_Answer.json
+254/300=0.847
+252/300=0.840
+254/300=0.847
+84.4±0.4
+
+
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --model claude3 \
+    --output ./output/CQ_auto_claude3_Answer.json
+    
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_claude3_Answer.json
+220/300=0.733✅
+231/300=0.770
+224/300=0.747
+75.2±1.8
+
+
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --model glm4 \
+    --output ./output/CQ_auto_glm4_Answer.json
+    
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_glm4_Answer.json
+206/300=0.687
+203/300=0.677
+211/300=0.703
+69.0±1.3
+
+python 05CQ_Test_Eval.py \
+    --prompt ./promptEn/CQTest.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --model deepseek \
+    --output ./output/CQ_auto_deepseek_Answer.json
+    
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_deepseek_Answer.json
+248/300=0.827
+245/300=0.817
+250/300=0.833
+
+------在LLMs上Auto Dataset上测试 添加静态prompt数据------------
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model gpt3 \
+    --output ./output/CQ_auto_AddStatic_gpt3_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_AddStatic_gpt3_Answer.json
+210/300=0.700
+71.7
+207/300=0.690
+70.4±1.4
+
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model gpt4 \
+    --output ./output/CQ_auto_AddStatic_gpt4_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_AddStatic_gpt4_Answer.json
+251/300=0.837
+246/300=0.820
+249/300=0.830
+82.9±0.9
+
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model doub \
+    --output ./output/CQ_auto_AddStatic_doub_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_AddStatic_doub_Answer.json
+263/300=0.877
+261/300=0.870
+262/300=0.873
+87.4±0.4
+
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model qwen \
+    --output ./output/CQ_auto_AddStatic_qwen_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_AddStatic_qwen_Answer.json
+270/300=0.900
+272/300=0.907
+268/300=0.893
+90.0±0.7
+
+
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model claude3 \
+    --output ./output/CQ_auto_AddStatic_claude3_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_AddStatic_claude3_Answer.json
+223/300=0.743
+234/300=0.780
+222/300=0.740
+76.0±2.0
+
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model glm4 \
+    --output ./output/CQ_auto_AddStatic_glm4_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_AddStatic_glm4_Answer.json
+209/286=0.731
+213/286=0.745
+203/286=0.710
+72.8±1.8
+
+python 05CQ_Test_Eval_addStatic.py \
+    --prompt ./promptEn/CQTestAddStatic.txt \
+    --dataset ./auto-dataset/output/mimick_mmlu_sample_300.json \
+    --datasetStatic ./dataset/formatDataset/mmlu/mmlu_sample_300.json \
+    --model deepseek \
+    --output ./output/CQ_auto_AddStatic_deepseek_Answer.json
+
+python 08countScoreCQ.py \
+    --json ./output/CQ_auto_AddStatic_deepseek_Answer.json
+264/300=0.880✅
+262/300=0.873
+261/300=0.870
